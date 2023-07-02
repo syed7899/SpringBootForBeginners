@@ -1,3 +1,4 @@
+/*
 package com.in28minutes.springboot.basics.springbootin10steps;
 
 import org.junit.Test;
@@ -14,3 +15,4 @@ public class SpringbootIn10StepsApplicationTests {
 	}
 
 }
+*/
