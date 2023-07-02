@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @AllArgsConstructor
@@ -17,7 +18,9 @@ public class EmployeeService {
     }
     
     public Employee getEmployee(int id){
-        employeeRepository.findById(id);
-    }
+        Optional<Employee> employee= employeeRepository.findById(id);
+        if(employee.isPresent())
+            return employee.get();
+        }
 
 }
