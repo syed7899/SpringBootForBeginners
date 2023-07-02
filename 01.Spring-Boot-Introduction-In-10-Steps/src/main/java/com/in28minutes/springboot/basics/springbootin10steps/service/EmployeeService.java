@@ -14,6 +14,7 @@ public class EmployeeService {
 
     private EmployeeRepository employeeRepository;
     public List<Employee> findAll(){
+        System.out.println("findAll has been called **");
         return employeeRepository.findAll();
     }
     
