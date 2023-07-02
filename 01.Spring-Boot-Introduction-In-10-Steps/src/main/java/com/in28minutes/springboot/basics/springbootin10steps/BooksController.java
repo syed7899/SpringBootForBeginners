@@ -33,4 +33,9 @@ public class BooksController {
 	public void M2() {
 		System.out.println("M2 Method");
 	}
+
+	@GetMapping("/m3")
+	public void M3() {
+		System.out.println("M3 Method");
+	}
 }
