@@ -43,4 +43,9 @@ public class BooksController {
 	public void M4() {
 		System.out.println("M4 Method");
 	}
+
+	@GetMapping("/m5")
+	public void M5() {
+		System.out.println("HYder M5");
+	}
 }
