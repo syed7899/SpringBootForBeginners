@@ -21,6 +21,7 @@ public class EmployeeService {
     public  Employee getEmployee(int id){
         Optional<Employee> employee= employeeRepository.findById(id);
         if(employee.isPresent()){
+          System.out.println("Conflict 1");
           System.out.println("Conflict 2");
         }
             return employee.get();
