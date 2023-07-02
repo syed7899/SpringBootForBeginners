@@ -14,4 +14,10 @@ public class BooksController {
 		return Arrays.asList(
 				new Book(1l, "Spring Boot 3.0", "Syed Hyder"));
 	}
+
+	@GetMapping("/message")
+	public String getGreetings() {
+		System.out.println("getGreetings has been called");
+		return "Hello Syed Hyder";
+	}
 }
