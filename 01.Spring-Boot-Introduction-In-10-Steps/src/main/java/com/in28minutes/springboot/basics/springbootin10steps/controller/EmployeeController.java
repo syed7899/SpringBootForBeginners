@@ -23,7 +23,7 @@ public List<Employee> getAllEmployees(){
        return employeeService.findAll();
    }
 
-}
+
 
 
     @GetMapping("/employee/{id}")
