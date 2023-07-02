@@ -19,7 +19,7 @@ private EmployeeService employeeService;
 
 @GetMapping("/employees")
 public List<Employee> getAllEmployees(){
-
+         System.out.println("getAllEmployees has been called");
        return employeeService.findAll();
    }
 
