@@ -28,4 +28,9 @@ public class BooksController {
 		System.out.println(" M1 method");
 	}
 
+
+	@GetMapping("/m2")
+	public void M2() {
+		System.out.println("M2 Method");
+	}
 }
