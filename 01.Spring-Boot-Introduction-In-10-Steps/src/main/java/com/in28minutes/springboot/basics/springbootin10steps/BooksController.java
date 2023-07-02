@@ -21,4 +21,11 @@ public class BooksController {
 		System.out.println("AMER ALI");
 		return "Hello Syed Hyder";
 	}
+
+
+	@GetMapping("/m1")
+	public void m1(){
+		System.out.println(" M1 method");
+	}
+
 }
