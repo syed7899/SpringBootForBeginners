@@ -3,14 +3,19 @@ package com.in28minutes.springboot.basics.springbootin10steps;
 import java.util.Arrays;
 import java.util.List;
 
+import lombok.AllArgsConstructor;
+import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@AllArgsConstructor
 public class BooksController {
+
+	private Environment  environment;
 	@GetMapping("/books")
 	public List<Book> getAllBooks() {
-		System.out.println("GetALLBooks ** Now this will have problem has been called");
+		System.out.print("from property file:"+environment.getProperty("mypropertykey"));
 		return Arrays.asList(
 				new Book(1l, "Spring Boot 3.0", "Syed Hyder"));
 	}

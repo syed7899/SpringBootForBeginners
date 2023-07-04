@@ -13,17 +13,15 @@ import java.util.Optional;
 public class EmployeeService {
 
     private EmployeeRepository employeeRepository;
-    public List<Employee> findAll(){
+
+    public List<Employee> findAll() {
         System.out.println("findAll has been called **");
         return employeeRepository.findAll();
     }
-    
-    public  Employee getEmployee(int id){
-        Optional<Employee> employee= employeeRepository.findById(id);
-        if(employee.isPresent()){
-          
-        }
-            return employee.get();
-        }
 
+    public Optional<Employee> getEmployee(int id) {
+        Optional<Employee> employee = employeeRepository.findById(id);
+        return employee;
+
+    }
 }
